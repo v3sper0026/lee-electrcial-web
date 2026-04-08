@@ -178,61 +178,7 @@ h2{
     margin-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-    * {
-        box-sizing: 100%;
-    }
 
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .container {
-        width: 95%;
-    }
-
-    nav h1 {
-        font-size: 16px;
-    }
-
-    nav ul {
-        gap: 15px;
-        display: none;
-    }
-
-    .serivces .container {
-        flex-direction: column;
-    }
-
-    .home-hero {
-        height: 70vh;
-        padding: 20px;
-    }
-
-    .home-hero h1 {
-        font-size: 24px;
-    }
-
-    .home-hero p {
-        font-size: 14px;
-    }
-
-    .why {
-        text-align: center;
-        padding: 60px 20px;
-    }
-    
-    .why ul {
-        padding: 0;
-        list-style: none;
-    }
-
-    .why li {
-        margin-bottom: 10px;
-        font-size: 14px;
-    }
-}
 .case {
     padding: 60px 0;
 }
@@ -775,4 +721,82 @@ h2{
 
 .wa-btn:hover {
     background: #1db954;
+}
+
+@media (max-width: 768px) {
+
+    /* ===== 全局 ===== */
+    * {
+        box-sizing: border-box;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+    .nav{
+        padding: 10px 15px;
+    }
+
+    .nav img {
+        height: 50px;
+    }
+
+    nav h1 {
+        font-size: 16px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .home-hero {
+        height: 70vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .home-hero h1 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .home-hero p {
+        font-size: 14px;
+        margin: 10px 0;
+    }
+
+    .home-hero button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .why {
+        text-align: center;
+        padding: 60px 20px;
+    }
+    
+    .why h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .why ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .why li {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
 }
