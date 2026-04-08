@@ -724,12 +724,28 @@ h2{
     background: #1db954;
 }
 
-@media (max-width: 768px) {
 
-    /* ===== 全局 ===== */
-    * {
-        box-sizing: border-box;
-    }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+
+@media (max-width: 768px) {
 
     html, body {
         overflow-x: hidden;
@@ -744,84 +760,108 @@ h2{
         width: 95%;
     }
 
-    .nav{
-        padding: 10px 15px;
+    /* Nav */
+    .hamburger {
+        display: flex;
     }
 
-    .nav img {
-        height: 50px;
-    }
-
-    nav h1 {
-        font-size: 16px;
-    }
-
-    nav ul {
+    #nav-menu {
         display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(255,255,255,0.95);
+        backdrop-filter: blur(8px);
+        padding: 16px 0;
+        gap: 0;
+        z-index: 999;
     }
 
+    #nav-menu.open {
+        display: flex;
+    }
+
+    #nav-menu li {
+        width: 100%;
+    }
+
+    #nav-menu a {
+        display: block;
+        padding: 12px 24px;
+        font-size: 15px;
+        text-align: left;
+        border-bottom: 1px solid rgba(0,0,0,0.06);
+    }
+
+    /* Hero */
     .home-hero {
-        height: 70vh;
-        padding: 20px;
-        text-align: center;
+        height: auto;
+        min-height: 70vh;
+        padding: 80px 0 40px;
+        width: 100%;
     }
 
     .home-hero h1 {
-        font-size: 22px;
+        font-size: 24px;
         line-height: 1.3;
+    }
+
+    .home-hero h2 {
+        font-size: 16px;
     }
 
     .home-hero p {
         font-size: 14px;
-        margin: 10px 0;
     }
 
     .home-hero button {
-        padding: 10px 15px;
+        padding: 10px 18px;
         font-size: 14px;
     }
 
+    /* Why */
     .why {
-        text-align: center;
-        padding: 60px 20px;
+        padding: 50px 0;
     }
-    
+
     .why h2 {
         font-size: 20px;
-        margin-bottom: 20px;
-    }
-    
-    .why ul {
-        padding: 0;
-        list-style: none;
     }
 
     .why li {
-        margin-bottom: 10px;
         font-size: 14px;
+        margin-bottom: 8px;
     }
 
+    /* Service grid */
     .service-grid {
-        display: grid;
-        grid-template-columns: 1fr;    
+        grid-template-columns: 1fr;
     }
 
-    .services h2 {
+    /* Contact grid */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-block {
+        height: 250px;
+    }
+
+    /* WhatsApp block */
+    .wa-block {
+        flex-direction: column;
         text-align: center;
-        margin-bottom: 20px;
+        gap: 16px;
     }
 
-    .case-card img {
-        width: 100%;
-        height: auto;
+    /* Process grid */
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .slider {
-        width: 100%;
-        overflow: hidden;
+    .process-grid::before {
+        display: none;
     }
-
-
-
-
 }
