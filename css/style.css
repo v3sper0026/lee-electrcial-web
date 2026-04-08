@@ -864,4 +864,38 @@ h2{
     .process-grid::before {
         display: none;
     }
+
+    :root {
+        --slider-width: 100%;
+        --slider-height: 220px;
+        --case-img-width: 100%;
+        --case-img-height: 220px;
+    }
+
+    .slider {
+        width: 100%;
+    }
+
+    .slider .after-wrap img {
+        width: 100vw;
+    }
+
+    .demo-wrap {
+        gap: 1rem;
+    }
+
+    .media-row {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .case-card {
+        width: 100%;
+    }
+
+    .case-card img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
 }
