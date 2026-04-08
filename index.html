@@ -21,7 +21,7 @@
                 <span></span>
             </button>
 
-            <ul>
+            <ul id="nav-menu">
                 <li><a href="index.html#top">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="service.html">Services</a></li>
@@ -208,22 +208,6 @@
 </a>
 
 <script src="js/script.js"></script>
-
-<script>
-    const hamburger = document.getElementById('hamburger');
-    const navMenu = document.getElementById('nav-menu');
-
-    hamburger.addEventListener('click', () => {
-        navMenu.classList.toggle('open');
-    });
-
-    // 点链接后自动关闭菜单
-    navMenu.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('open');
-        });
-    });
-</script>
 
 </body>
 </html>
