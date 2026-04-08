@@ -803,6 +803,28 @@ h2{
 
     .service-grid {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;    
     }
+
+    .services h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .case-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .slider {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider img {
+        width: 100%;
+        height: auto;
+    }
+
+
 }
