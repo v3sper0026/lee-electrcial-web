@@ -11,6 +11,8 @@ body {
     background-color: #0f172a;
     color: white; 
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
@@ -28,7 +30,6 @@ body {
 nav {
     position: sticky;
     top: 0;
-    width: 100%;
     background-color: rgba(255,255,255,0.7);
     backdrop-filter: blur(8px);
     z-index: 1000;
@@ -67,7 +68,8 @@ nav a:hover {
 
 
 .home-hero {
-    width: 100%;
+    background-size: cover;
+    background-position: center;
     height: 90vh;
     display: flex;
     align-items: center;
@@ -177,6 +179,19 @@ h2{
 }
 
 @media (max-width: 768px) {
+    * {
+        box-sizing: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .container {
+        width: 95%;
+    }
+
     nav h1 {
         font-size: 16px;
     }
@@ -190,8 +205,32 @@ h2{
         flex-direction: column;
     }
 
-    .hero h1 {
-        font-size: 28px;
+    .home-hero {
+        height: 70vh;
+        padding: 20px;
+    }
+
+    .home-hero h1 {
+        font-size: 24px;
+    }
+
+    .home-hero p {
+        font-size: 14px;
+    }
+
+    .why {
+        text-align: center;
+        padding: 60px 20px;
+    }
+    
+    .why ul {
+        padding: 0;
+        list-style: none;
+    }
+
+    .why li {
+        margin-bottom: 10px;
+        font-size: 14px;
     }
 }
 .case {
