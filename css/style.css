@@ -147,13 +147,9 @@ nav a:hover {
 .services .container {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-.home-service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
-    gap: 20px;
-}
 
 .service-box {
     background-color: #1e293b;
@@ -161,7 +157,7 @@ nav a:hover {
     flex: 1;
     border-radius: 12px;
     transition: 0.3s;
-    width: 100%;
+    min-width: 200px;
 }
 
 .service-box:hover {
