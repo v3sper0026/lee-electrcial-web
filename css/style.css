@@ -149,6 +149,12 @@ nav a:hover {
     gap: 20px;
 }
 
+.home-service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+}
+
 .service-box {
     background-color: #1e293b;
     padding: 25px;
@@ -426,10 +432,10 @@ h2{
 }
 
 
-.home-service-grid {
+.service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
 }
 
 .services-card {
