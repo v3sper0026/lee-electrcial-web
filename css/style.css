@@ -199,6 +199,31 @@ h2{
     transition: 0.3s;
 }
 
+.fb-more {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.fb-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    background: #1877f2; /* Facebook蓝 */
+    color: white;
+    padding: 12px 20px;
+
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.fb-btn:hover {
+    background: #145dbf;
+    transform: translateY(-2px);
+}
 
 
 .whatsapp {
